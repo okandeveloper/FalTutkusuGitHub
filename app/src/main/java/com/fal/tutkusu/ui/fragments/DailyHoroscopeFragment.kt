@@ -9,7 +9,6 @@ import com.fal.tutkusu.databinding.ActivityGunlukBurcMenuBinding
 
 class DailyHoroscopeFragment: Fragment() {
 
-
     private var _binding: ActivityGunlukBurcMenuBinding? = null
     private val binding: ActivityGunlukBurcMenuBinding
         get() = _binding!!
