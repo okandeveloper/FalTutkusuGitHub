@@ -19,7 +19,10 @@ class MainActivity : AppCompatActivity() {
         val linearCard2 = findViewById<View>(R.id.linearcard2)
         val linearCard3 = findViewById<View>(R.id.linearcard3)
 
-        // onClickListener ekliyoruz
+        //deneme kodu github
+        val linearCard4 = findViewById<View>(R.id.linearcard3)
+
+        // onClickListener ekliyoruzgi
         linearCard1.setOnClickListener {
             // FalMenu ekranına geçmek için bir Intent oluşturuyoruz
             val intent = Intent(this, FalMenu::class.java)
