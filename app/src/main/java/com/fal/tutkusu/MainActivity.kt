@@ -3,10 +3,7 @@ package com.fal.tutkusu
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import com.fal.tutkusu.Falbaktir.FalMenu
-import com.fal.tutkusu.GunlukBurc.GunlukBurcMenu
-import com.fal.tutkusu.TarotFali.TarotFaliMenu
+import com.fal.tutkusu.ui.TarotFaliMenu
 import com.fal.tutkusu.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,25 +17,20 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_main)
 
-        // onClickListener ekliyoruz
+        //TODO: use navigation instead of intent
+
         binding.linearcard1.setOnClickListener {
-            // FalMenu ekranına geçmek için bir Intent oluşturuyoruz
-            val intent = Intent(this, FalMenu::class.java)
-            // Intent'i başlatıyoruz
-            startActivity(intent)
+            //val intent = Intent(this, FalMenu::class.java)
+            //startActivity(intent)
         }
 
-        binding.linearcard2.setOnClickListener{
-            // FalMenu ekranına geçmek için bir Intent oluşturuyoruz
-            val intent = Intent(this, GunlukBurcMenu::class.java)
-            // Intent'i başlatıyoruz
-            startActivity(intent)
+        binding.linearcard2.setOnClickListener {
+            // val intent = Intent(this, GunlukBurcMenu::class.java)
+            // startActivity(intent)
         }
 
-        binding.linearcard3.setOnClickListener{
-            // FalMenu ekranına geçmek için bir Intent oluşturuyoruz
+        binding.linearcard3.setOnClickListener {
             val intent = Intent(this, TarotFaliMenu::class.java)
-            // Intent'i başlatıyoruz
             startActivity(intent)
         }
     }

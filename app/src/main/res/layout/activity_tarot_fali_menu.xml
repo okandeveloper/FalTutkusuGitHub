@@ -9,7 +9,7 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".TarotFali.TarotFaliMenu">
+    tools:context=".ui.TarotFaliMenu">
 
     <TextView
         android:layout_width="match_parent"

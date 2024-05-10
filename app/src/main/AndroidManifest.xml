@@ -13,15 +13,6 @@
         android:theme="@style/Theme.FalTutkusu"
         tools:targetApi="31">
         <activity
-            android:name=".TarotFali.TarotFaliMenu"
-            android:exported="false" />
-        <activity
-            android:name=".GunlukBurc.GunlukBurcMenu"
-            android:exported="false" />
-        <activity
-            android:name=".Falbaktir.FalMenu"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -30,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
